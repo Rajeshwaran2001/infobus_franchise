@@ -25,9 +25,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v1.0.0 # replace with your release tag
-          release_name: Release 1.0.0 # replace with your release name
-          body: Release of version 1.0.0 # replace with your release description
+          tag_name: v1.0.2 # replace with your release tag
+          release_name: Release 1.0.2 # replace with your release name
+          body: Release of version 1.0.2 # replace with your release description
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
         env:
