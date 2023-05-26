@@ -31,7 +31,7 @@ class _WebViewAppState extends State<WebViewApp> {
     super.initState();
     controller = WebViewController()
       ..loadRequest(
-        Uri.parse('https://erp.rajeshwaran.me/'),
+        Uri.parse('https://infobus.in/login'),
       );
   }
 
@@ -39,7 +39,7 @@ class _WebViewAppState extends State<WebViewApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FRESHDESK'),
+        title: const Text('InfoBus'),
         actions: [
           NavigationControls(controller: controller),
         ],
