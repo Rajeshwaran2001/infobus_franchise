@@ -25,8 +25,9 @@ class _WebViewAppState extends State<WebViewApp> {
   void initState() {
     super.initState();
     controller = WebViewController()
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..loadRequest(
-        Uri.parse('https://infobus.in/login'),
+        Uri.parse('https://infobus.in/customer-view'),
       );
   }
 
